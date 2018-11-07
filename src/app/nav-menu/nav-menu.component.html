@@ -1,0 +1,41 @@
+<div>
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <span>Recipe My Way</span>
+            <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+                <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink="/login">Login</button>
+                <button mat-menu-item routerLink="/createaccount">Create Account</button>
+                <button mat-menu-item routerLink="/showmembers">Show Members</button>
+                <button mat-menu-item routerLink="/changepassword">Change Password</button>
+                </mat-menu>
+        </mat-toolbar-row>
+    </mat-toolbar>
+   
+    <!--When menu button Login is clicked, showLogin() method is called; if false, hide Login, and if true show Login, which is calling app-login component-->
+    <!--span *ngIf="!logStu; then hideTheLogin; else showTheLogin"></span>
+        <ng-template #hideTheLogin> </ng-template>
+        <ng-template #showTheLogin> <app-login></app-login> </ng-template-->
+    
+    <!--When menu button Create Account is clicked, showForm() method is called; if false, hide form, and if true show form-->    
+    <!--span *ngIf="!formStu; then hideTheForm; else showTheForm"></span>
+        <ng-template #hideTheForm> </ng-template>
+        <ng-template #showTheForm> <app-create-account-form></app-create-account-form> </ng-template>-->
+    
+    <!--When menu button Show Members is clicked, showTheList() method is called; if false, hide list, and if true show list -->  
+    <!--span *ngIf="!listStu; then hideTheList; else showTheList"></span>
+        <ng-template #hideTheList> </ng-template>
+        <ng-template #showTheList> <app-show-members></app-show-members> </ng-template> -->   
+     
+    <!--When menu botton Change Password is clicked, ChangePW() method is called; if false, hide change password, and if true show change password-->
+    <!--span *ngIf="!Cpw; then hideTheChangePW; else showTheChangePW"></span>
+        <ng-template #hideTheChangePW> </ng-template>
+        <ng-template #showTheChangePW> 
+          <!-Call change-password component, but create oldEmail variable and set value as the email in index 0; same for oldPassword
+            <app-change-password  
+            oldEmail="{{members[0].email}}" 
+            oldPassword="{{members[0].password}}">
+            </app-change-password> 
+        </ng-template>-->
+    </div>
+      

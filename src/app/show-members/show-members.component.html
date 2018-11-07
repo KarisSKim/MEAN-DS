@@ -1,0 +1,9 @@
+<div> 
+  <h3>Show members of Recipe My Way </h3>
+  <ul *ngFor ="let member of members let i = index">
+    <li> ID: {{member._id}}: {{member.firstName}} {{member.lastName}}  
+      <button mat-button color="warn" (click)="onDelete(member._id)">DELETE </button>
+      <button mat-button color="accent" [routerLink]="['/editMember', member._id]"> UPDATE</button> 
+    </li>
+  </ul>
+</div>

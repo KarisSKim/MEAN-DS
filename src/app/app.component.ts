@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//import { MemberService } from './member.service';  
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lab10-navMenu';
+  title = 'lab11-Q2';
+
+
+constructor() { }
+ngOnInit(){}
+
 }

@@ -13,15 +13,15 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have as title 'lab10-navMenu'`, async(() => {
+  it(`should have as title 'lab10-Q2'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('lab10-navMenu');
+    expect(app.title).toEqual('lab10-Q2');
   }));
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to lab10-navMenu!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to lab10-Q2!');
   }));
 });

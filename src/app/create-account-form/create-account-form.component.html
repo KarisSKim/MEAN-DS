@@ -1,0 +1,25 @@
+<div >
+  <h3> {{mode}} member:</h3>
+
+  <form (ngSubmit)="onSubmit()" #myForm="ngForm" > 
+    <mat-form-field >
+      <input matInput placeholder="First Name" id="firstname" [(ngModel)]="firstName" name="firstname" Required>
+    </mat-form-field>
+  <br/>
+    <mat-form-field >
+      <input matInput placeholder="Last Name" id="lastname" [(ngModel)]="lastName" name="lastname" Required>
+    </mat-form-field>
+  <br/>
+    <mat-form-field >
+      <input matInput placeholder="Email" id="email" [(ngModel)]="email" name="email" Required>
+    </mat-form-field>
+  <br/>
+    <mat-form-field >
+      <input matInput placeholder="Password" id="password" [(ngModel)]="password" name="password" Required>
+    </mat-form-field>
+
+    <p> <button type="submit" mat-raised-button>Submit</button> </p>
+  </form>
+
+</div>
+  
